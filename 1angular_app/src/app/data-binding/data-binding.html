@@ -1,0 +1,30 @@
+<div align = "center">
+    <h2>Data Binding</h2>
+    <div>
+        <h4 class="">1. Interpolation</h4>
+        <p>My name is <b>{{name}}</b></p>
+    </div>
+    <div>
+        <h4>2. Property Binding</h4>
+        <input type="text" id="name" [value]="name" >
+        <div style="height: auto; align-items: center; image-rendering: auto;">
+            <img style="height: 200p; width: 250px;" [src]="image" alt="A new Image">
+        </div>
+    </div>
+    <div>
+        <h4 class="">3. Event Binding</h4>
+        <button (click)="onClick()" type="submit">click</button><br><br>
+
+        <label for="dropdown">Choose your Country</label><br>
+        <select (change)="onChange()" name="country" id="">
+            <option value="India">India</option>
+            <option value="Canada">Canada</option>
+            <option value="USA">USA</option>
+        </select>
+    </div>
+    <div>
+        <h4>Two Way DataBinding</h4>
+        <input type="text" [(ngModel)] = "name">
+        {{random}}
+    </div>
+</div>

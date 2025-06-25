@@ -1,0 +1,11 @@
+.text{
+    color: green
+}
+.textRed {
+    color : red
+}
+.mainDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

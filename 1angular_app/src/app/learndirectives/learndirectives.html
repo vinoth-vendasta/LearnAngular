@@ -1,0 +1,80 @@
+<div>
+    <h2 align="center">Directives</h2>
+    <div align="center" class="mainDiv">
+        <div>
+            <h4>Stuctural Directives</h4>
+
+            <div class="">
+                <h5>*ngIf directive</h5>
+                <input (click)="onClick()" type="checkbox">Terms and conditions
+                <div>
+                    <!-- <button *ngIf="isChecked" style="color: white; background-color: green; border-radius: 10%;" type="button">submit</button>
+                <button *ngIf="!isChecked" style="color: white; background-color: green; border-radius: 10%;" type="button" disabled>submit</button> -->
+                    @if (isChecked) {
+                    <button style="color: white; background-color: green; border-radius: 10%;"
+                        type="button">submit</button>
+                    }@else{
+                    <button style="color: white; background-color: green; border-radius: 10%;" type="button"
+                        disabled>submit</button>
+                    }
+                </div>
+            </div>
+
+            <div class="">
+                <h5>*ngFor directive</h5>
+                <select name="customers" id="">
+                    <option [value]="cus.name" *ngFor="let cus of customers">
+                        {{cus.name}} - {{cus.email}}
+                    </option>
+                    <br><br>
+                    @for (cus of customers; track cus;let i= $index) {
+                    <option [value]="cus.name">
+                        {{i+1}}. {{cus.name}} - {{cus.email}}
+                    </option>
+                    }
+                </select>
+
+            </div>
+            <div class="">
+                <h5>*ngSwitch directive</h5>
+                <button type="button" (click)="set(1)">First</button>
+                <button type="button" (click)="set(2)">Second</button>
+                <button type="button" (click)="set(3)">Third</button>
+
+                <!-- <div [ngSwitch]="grade" >
+                <div *ngSwitchCase="1" >First Place</div>
+                <div *ngSwitchCase="2" >Second Place</div>
+                <div *ngSwitchCase="3" >Third Place</div>
+            </div>  -->
+                @switch (grade) {
+                @case (1) {
+                <div>First Place</div>
+                }@case (2) {
+                <div>Second Place</div>
+                }@case (3) {
+                <div>Third Place</div>
+                }@default {
+                <div>No result</div>
+                }
+                }
+
+            </div>
+
+        </div>
+
+        <div class="">
+            <h4>Attribute Directives</h4>
+            <div class="">
+                <h5>ngClass attribute</h5>
+                <p [ngClass]="textColor" (click)="onClickColorChange()">This text will change to red color</p>
+                <p style="color: green;">This text is in green color</p>
+            </div>
+            <div class="">
+                <h5>ngStyle attribute</h5>
+                <p [ngStyle]="{'color':newtextColor, 'font-weight':'lighter'}" (click)="onnewClickColorChange()">This
+                    text will click to change to red color</p>
+
+            </div>
+        </div>
+    </div>
+</div>
