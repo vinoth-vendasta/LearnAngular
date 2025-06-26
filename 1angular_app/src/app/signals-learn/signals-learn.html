@@ -1,0 +1,17 @@
+<div class="" align="center" >
+    <h2>Signals</h2>
+    <div>
+        <p>Counter value is {{counter()}}</p>
+        <button (click)="updateCounter(5)" >update</button>
+    </div>
+    <div class="" style="padding: 20px;" >
+        <h4>Writable Signal</h4>
+        <p>Counter value is {{WritableCounter()}}</p>
+    </div>
+    <div class="" style="padding: 20px;" >
+        <h4>Readable Signal</h4>
+        <p>Counter value is {{WritableCounter()}}</p>
+
+        <button (click)="incrementReadableCounter()" >increment</button>
+    </div>
+</div>
