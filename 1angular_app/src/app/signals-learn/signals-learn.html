@@ -7,11 +7,14 @@
     <div class="" style="padding: 20px;" >
         <h4>Writable Signal</h4>
         <p>Counter value is {{WritableCounter()}}</p>
+
+        <button (click)="incrementReadableCounter()" >Increment</button>
     </div>
     <div class="" style="padding: 20px;" >
         <h4>Readable Signal</h4>
-        <p>Counter value is {{WritableCounter()}}</p>
+        <p>Counter value is {{counterSignal()}}</p>
+        <!-- <button (click)="updateCounter2()" >Increment</button> -->
 
-        <button (click)="incrementReadableCounter()" >increment</button>
+        
     </div>
 </div>

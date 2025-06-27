@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-cards',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './cards.css'
 })
 export class Cards {
-
+  constructor() {
+    console.log("cards constructor")
+  }
 }

@@ -2,10 +2,10 @@
 
 ## Angular Data Binding
 Data binding connects component logic (TypeScript) with the HTML template (View). Angular supports four main types:
-🧩 1. Interpolation – {{ value }}
-🧩 2. Property Binding – [property]="value"
-🧩 3. Event Binding – (event)="handler()"
-🧩 4. Two-Way Binding – [(ngModel)]="property"
+1. 🧩 Interpolation – {{ value }}
+2. 🧩 Property Binding – [property]="value"
+3. 🧩 Event Binding – (event)="handler()"
+4. 🧩 Two-Way Binding – [(ngModel)]="property"
 
 🧩 1. Interpolation – {{ value }}
 * Bind data from the class to the template.

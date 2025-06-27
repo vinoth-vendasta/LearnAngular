@@ -1,0 +1,19 @@
+<div class="container"
+    style="height: 700px; width: 1500px; display: flex; justify-content: center; align-items: flex-start; background-color: lightblue;">
+
+    <div style="border: 1px;border-style: double; border-color: black;margin-top: 100px; padding: 30px; background-color: aqua;"
+        class="form-container">
+        <h3 align="center">Login</h3>
+        <div class="Inputfield">
+            <label style="margin: 10px ; border: none; border-radius: 30%;" for="username">Username: </label><input
+                type="text"><br>
+        </div>
+        <div class="Inputfield">
+            <label style="margin: 10px;" for="password">Password: </label><input type="password">
+        </div>
+        <div class="buttons" align="center">
+            <button routerLink="/" type="button"> > Back</button>
+            <button (click)="loginData()" style="margin-left: 20px;" type="button">Login</button>
+        </div>
+    </div>
+</div>
