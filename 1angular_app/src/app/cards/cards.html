@@ -1,5 +1,23 @@
-<main>
+<!-- <main>
     <div class="">
-        <p class="">Cards Content</p>
+        <p class="">API Content</p>
+        <div class="">
+            <ul *ngFor="let data of apiData">
+                <li>{{data.id}}</li>
+                <li>{{data.name}}</li>
+                <li>{{data.username}}</li>
+                <li>{{data.email}}</li>
+            </ul>
+        </div>
     </div>
-</main>
+</main> -->
+<div>
+    <ul>
+        <li *ngFor="let user of apiData">
+            {{ user.name }} ({{ user.email }})
+        </li>
+    </ul>
+</div>
+<ng-template #loading>
+    Loading...
+</ng-template>

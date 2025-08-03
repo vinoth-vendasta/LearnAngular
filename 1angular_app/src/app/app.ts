@@ -1,8 +1,6 @@
-import { SignalsLearn } from './signals-learn/signals-learn';
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { DataBinding } from './data-binding/data-binding';
-import { Learndirectives } from './learndirectives/learndirectives';
+
 
 @Component({
   selector: 'app-root',
