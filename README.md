@@ -139,3 +139,38 @@ export class AppComponent {
   Styled Text
 </p>
 ```
+## Create a JSON Server
+1. Install it
+```cmd
+npm install --save-dev json-server
+```
+2. Create a file **db.json**
+```json
+{
+  "Users: [
+  {
+    "id" : 1,
+    "name" : "Vinoth",
+    "username" : "vino",
+    "email" : "vinot@gmail.com"
+  },
+
+    "id" : 2,
+    "name" : "dk",
+    "username" : "dk",
+    "email" : "dk@gmail.com"
+  },
+
+    "id" : 3,
+    "name" : "jd",
+    "username" : "jd",
+    "email" : "jd@gmail.com"
+  }
+
+  ]
+}
+```
+3. Run the server
+```cmd
+npm run start:json
+```
